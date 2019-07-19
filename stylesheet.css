@@ -67,6 +67,7 @@ h1, h2, h3 {
     color: #1C6E8C;
 }
 .article-content h3 {
+    padding-top: 10px;
     font-weight: 500;
     margin: 2px 0;
 }
