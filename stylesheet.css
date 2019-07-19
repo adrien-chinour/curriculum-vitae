@@ -1,0 +1,101 @@
+/* supression des marges et modification de la font de base */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem
+}
+
+/* ajout du background lors du print sur chrome */
+body {
+    -webkit-print-color-adjust: exact !important;
+  }
+
+/* modifications globales */
+header, footer {
+    text-align: center;
+}
+aside {
+    background-color: #eeeeee;
+}
+main section {
+    margin: 0 10%;
+    padding: 10px;
+}
+h1, h2, h3 {
+    color: #274156;
+}
+
+/* container de flexbox */
+.container {
+    display: flex;
+}
+.container-columns {
+    display: flex;
+	flex-direction: column;
+}
+
+
+.section-title {
+    margin: 5px 0;
+    text-align: center;
+    background-color: #274156;
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+.article {
+    margin-left: 5px;
+    display: flex;
+    border-left: 3px #555555 solid;
+    margin-bottom: 1rem;
+}
+.article-image {
+    margin: 10px;
+}
+.article-image img {
+    max-width: 64px;
+    max-height: 64px;
+}
+.article-header > * {
+    display: inline-block;
+}
+.article-header span {
+    float: right;
+    font-weight: 300; 
+    padding-right: 2px;
+    color: #1C6E8C;
+}
+.article-content h3 {
+    font-weight: 500;
+    margin: 2px 0;
+}
+.article-content {
+    width: 100%;
+}
+.article-content p {
+    margin: 5px 0;
+}
+
+.tag-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.tag-container li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #999;
+    color: #eeeeee;
+    border-radius: 5px;
+}
+
+.badge {
+    margin: 0 3px;
+    padding: 0 3px;
+    background-color: coral;
+    color: #eeeeee !important;
+    border-radius: 5px;
+}
